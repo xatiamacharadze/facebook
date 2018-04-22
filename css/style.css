@@ -1,6 +1,10 @@
 .header-container {
     height: 42px;
     padding-right: 205px;
+    position:  fixed;
+    width:  100%;
+    top:  0;
+    z-index:  100;
 }
 
 .header-wrapper {
@@ -162,6 +166,8 @@
 
 .body-container {
     padding-right: 205px;
+    padding-top:  42px;
+    margin-bottom: 100px;
 }
 
 .body-wrapper {
@@ -169,11 +175,14 @@
     display: flex;
     justify-content: space-between;
     width: 1012px;
+    position:  relative;
+    align-items:  flex-start;
 }
 
 .body-left-container {
     width: 185px;
-    height: 500px;
+    position:  sticky;
+    top: 50px;
 }
 
 .body-middle-container {
@@ -182,6 +191,8 @@
 
 .body-right-container {
     width: 310px;
+    position: sticky;
+    top: 50px;
 }
 
 .user-container > img {
@@ -689,4 +700,103 @@
 
 .right-bottom-txt {
     margin: 0 10px;
+}
+
+.chat-container {
+    position: fixed;
+    right:  0;
+    top:  42px;
+    height:  calc(100% - 42px);
+    width: 205px;
+    border-left: 1px solid #ccc;
+    overflow: scroll;
+}
+
+.suggested-pages-container {
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-between;
+    margin-top:  10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+}
+
+.chat-container-top {
+    padding: 8px;
+}
+
+.chat-top-title {
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-between;
+}
+
+.suggested-pages > img {
+    width: 45px;
+    border-radius:  50px;
+}
+
+.suggested-pages {
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-between;
+    width: 80%;
+}
+
+.chat-container-middle .shortcuts-wrapper > p {
+    margin-top:  0;
+}
+
+.chat-container-middle {
+    padding:  8px;
+}
+
+.chat-container-middle .shortcuts-container > img {
+    width: 35px;
+    border-radius:  50px;
+}
+
+.shortcuts-container > .online {
+    position:  absolute;
+    right:  0;
+    visibility:  visible;
+}
+
+.shortcuts-container > img.online {
+    width: auto;
+}
+
+.chat-container-middle .shortcuts-container:hover {
+    background-color: transparent;
+    border: none;
+    margin: 2px 0;
+}
+
+.chat-container-middle .shortcuts-wrapper {
+    margin-bottom:  15px;
+}
+
+.chat-container-bottom {
+    position:  fixed;
+    height: 30px;
+    bottom:  0;
+    right:  0;
+    z-index:  10;
+    width: 204px;
+    background-color: #f6f7f9;
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-between;
+    padding: 5px;
+}
+
+.chat-container-bottom > input {
+    border:  none;
+    background-color: #f6f7f9;
+    padding-left:  4px;
+    max-width:  110px;
+}
+
+.chat-container-bottom > img {
+    margin-left:  5px;
 }
