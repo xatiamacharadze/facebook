@@ -222,7 +222,7 @@
 }
 
 .shortcuts-container > span {
-    margin-left: 10px;
+    margin-left: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -287,4 +287,95 @@
 
 .create-container > span.fc-blue:hover {
     text-decoration: underline;
+}
+
+.facebook-story > img {
+    max-width:  48px;
+    border-radius:  50px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #4080ff;
+    margin-right: 10px;
+}
+
+.facebook-story {
+    display:  flex;
+    align-items:  center;
+    justify-content:  flex-start;
+    margin-bottom: 16px;
+}
+
+.stories-container-header {
+    display:  flex;
+    justify-content:  space-between;
+    align-items:  center;
+}
+
+.stories-container-header > img {
+    max-width:  15px;
+}
+
+.stories-container {
+    padding: 5px 15px;
+    border: 1px solid #dddfe2;
+}
+
+.story-author-time > p {
+    margin:  0;
+}
+
+.facebook-story:hover .story-author-time > p:first-child {
+    text-decoration:  underline;
+}
+
+.stories-explain-container > .explain {
+    visibility:  hidden;
+    display:  none;
+}
+
+.stories-explain-container > img {
+    max-width: 15px;
+    height: 4px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.stories-explain-container > p:hover ~ .explain {
+    display:  block;
+    position:  absolute;
+    z-index:  1;
+    visibility:  visible;
+    width: 740%;
+    padding: 6px 10px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.stories-explain-container {
+    position:  relative;
+}
+
+.stories-explain-container > p:hover {
+    text-decoration:  underline;
+}
+
+.stories-explain-container > img:hover ~ .explain {
+    display:  block;
+    position:  absolute;
+    z-index:  1;
+    visibility:  visible;
+    width: auto;
+    padding: 6px 10px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.stories-explain-container > p:hover ~ .explain:after,
+.stories-explain-container > img:hover ~ .explain:after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    top: -5px;
+    left: 5px;
+    position: absolute;
 }

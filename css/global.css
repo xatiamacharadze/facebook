@@ -24,6 +24,9 @@ body {
     cursor: pointer;
 }
 
+.bold{
+    font-weight: 500;
+}
 
 
 .fs-10{
