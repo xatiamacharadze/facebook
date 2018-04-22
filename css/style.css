@@ -159,3 +159,132 @@
 .help-container > img:hover {
     opacity: 0.8;
 }
+
+.body-container {
+    padding-right: 205px;
+}
+
+.body-wrapper {
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1012px;
+}
+
+.body-left-container {
+    width: 185px;
+    height: 500px;
+}
+
+.body-middle-container {
+    width: 500px;
+}
+
+.body-right-container {
+    width: 310px;
+}
+
+.user-container > img {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shortcuts-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 3px 5px;
+    margin: 2px 0;
+    cursor: pointer;
+    left: -5px;
+}
+
+.shortcuts-container > .other {
+    position: absolute;
+    width: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.shortcuts-container.active > .other {
+    visibility: visible;
+}
+
+.shortcuts-container.active > .unseen{
+    visibility: hidden;
+}
+
+.shortcuts-container > span {
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 70%;
+}
+
+.shortcuts-container.active > span {
+    font-weight: bold;
+}
+
+.shortcuts-container.active {
+    background-color: #f6f7f9;
+    border: 1px solid #dddfe2;
+}
+
+.shortcuts-container:hover {
+    background-color: #f6f7f9;
+    border: 1px solid #dddfe2;
+    margin: -1px;
+}
+
+.shortcuts-container.active:hover {
+    margin: 2px 0;
+}
+
+.news-feed-messenger-container {
+    margin-top: 15px;
+}
+
+.shortcuts-container > .unseen {
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    visibility: visible;
+}
+
+.shortcuts-container:hover .unseen {
+    visibility: hidden;
+}
+
+.shortcuts-container:hover .other {
+    visibility: visible;
+}
+
+.shortcuts-wrapper > p {
+    margin-bottom: 5px;
+}
+
+.shortcuts-container.see-more:hover {
+    background-color: transparent;
+    border: none;
+    margin: 2px 0;
+}
+
+.shortcuts-container.see-more > .rotate {
+    transform:  rotate(90deg);
+}
+
+.shortcuts-container.see-more:hover > span {
+    text-decoration:  underline;
+}
+
+.create-container > span.fc-blue:hover {
+    text-decoration: underline;
+}
